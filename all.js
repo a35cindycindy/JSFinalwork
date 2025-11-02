@@ -131,7 +131,7 @@ cartList.addEventListener('click',function(e){
         alert("你點到其他東西了")
         return;
     }
-    console.log(cartId);
+    // console.log(cartId);
     axios.delete(`https://livejs-api.hexschool.io/api/livejs/v1/customer/${api_path}/carts/${cartId}`)
     .then(function(response){
          alert("刪除單筆購物車成功");
